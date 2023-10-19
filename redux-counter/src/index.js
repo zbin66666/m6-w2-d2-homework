@@ -4,11 +4,12 @@ import Counter from './Counter';
 import {Provider} from 'react-redux';
 import { createStore } from 'redux';
 
+
 const initialState ={
   count : 0
 };
 
-function reducer(state=initialState, action){
+function reducer( state= initialState, action){
   switch (action.type) {
     case 'INCREMENT':
       return {
